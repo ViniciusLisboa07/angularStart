@@ -1,6 +1,6 @@
-import { Cat } from './../models/product';
+import { Cat } from '../models/cat';
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from "../services/product.service";
+import { ProductService } from "../services/cat.service";
 
 @Component({
   selector: 'app-app-product-list',

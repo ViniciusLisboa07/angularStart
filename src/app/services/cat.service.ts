@@ -1,4 +1,4 @@
-import { Cat } from './../models/product';
+import { Cat } from '../models/cat';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
