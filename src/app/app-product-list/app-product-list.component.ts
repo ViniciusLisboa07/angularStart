@@ -1,6 +1,6 @@
-import { Cat } from '../models/cat';
+import { Product } from '../models/product';
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from "../services/cat.service";
+import { ProductService } from "../services/product.service";
 
 @Component({
   selector: 'app-app-product-list',
@@ -9,15 +9,17 @@ import { ProductService } from "../services/cat.service";
 })
 export class AppProductListComponent implements OnInit {
 
-  cats: Cat[] = [];
+  products: Product[] = [];
 
   constructor(private service: ProductService) {}
 
   ngOnInit(): void {
-    this.service.list().subscribe((cats) => {
-      this.cats = cats;
-      for (let cat of cats) {
-          console.log(cat);
+    this.service.list().subscribe((products) => {
+      this.products = products;
+      console.log(this.products)
+      for (let product of products) {
+        console.log(products);
+        console.log('=-=-=');
       }
   });
   }

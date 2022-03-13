@@ -1,4 +1,4 @@
-import { Cat } from '../models/cat';
+import { Product } from '../models/product';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -8,12 +8,12 @@ import { Observable } from 'rxjs';
 })
 export class ProductService {
 
-  private baseUrl = "https://cat-fact.herokuapp.com"
+  private baseUrl = "http://localhost:3000/products"
 
   constructor(private http: HttpClient) { }
 
-  list(): Observable<Cat[]> {
-    return this.http.get<Cat[]>(`${this.baseUrl}/facts`);
+  list(): Observable<Product[]> {
+    return this.http.get<Product[]>(`${this.baseUrl}`);
   }
 
 //   getById(id: number): Observable<Product> {

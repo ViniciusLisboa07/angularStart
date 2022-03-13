@@ -1,11 +1,10 @@
 <div>
-    <h2>Gatos</h2>
-
-    <div *ngFor="let cat for cats">
+    <h2>Produtos</h2>
+    <mat-card *nFor=" let product for products ">
         <mat-card>
               <p>
-                Descrição: {{ cat.text }}
+                Descrição: {{ product.de }}
               </p>
         </mat-card>
-    </div>
+    </mat-card>
 </div>
