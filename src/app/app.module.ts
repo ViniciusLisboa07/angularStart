@@ -11,6 +11,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { AppProductListComponent } from './app-product-list/app-product-list.component';
 import {MatCardModule} from '@angular/material/card';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -18,7 +19,8 @@ import {MatCardModule} from '@angular/material/card';
   declarations: [
     AppComponent,
     AppTopBarComponent,
-    AppProductListComponent
+    AppProductListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
