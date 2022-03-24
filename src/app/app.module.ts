@@ -12,6 +12,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { AppProductListComponent } from './app-product-list/app-product-list.component';
 import {MatCardModule} from '@angular/material/card';
 import { HomeComponent } from './home/home.component';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -30,7 +31,8 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

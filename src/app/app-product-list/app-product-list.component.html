@@ -1,10 +1,18 @@
-<div>
-    <h2>Produtos</h2>
-    <mat-card *nFor=" let product for products ">
-        <mat-card>
-              <p>
-                Descrição: {{ product.de }}
-              </p>
-        </mat-card>
-    </mat-card>
+<div class="list">
+    <h2 class="title">Produtos</h2>
+    <div *ngFor=" let product of products2">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Nome: {{product.name}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          Preço: {{product.price}}
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>Adicionar ao carrinho</button>
+          <button mat-button>Ver mais</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
 </div>

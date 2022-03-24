@@ -12,8 +12,18 @@ export class ProductService {
 
   constructor(private http: HttpClient) { }
 
-  list(): Observable<Product[]> {
-    return this.http.get<Product[]>(`${this.baseUrl}`);
+  list() {
+    const lista = [
+      {
+        'name': 'produto 1',
+        'price': 23
+      },
+      {
+        'name': 'produto 2',
+        'price': 23
+      }
+    ]
+    return lista
   }
 
 //   getById(id: number): Observable<Product> {
