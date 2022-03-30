@@ -1,0 +1,30 @@
+.main {
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.example-card{
+    max-width: 500px;
+    margin: 20px;
+}
+
+.price {
+    min-width: 300px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    border-radius: 10px ;
+}
+
+.price > h2 {
+    margin: 0;
+}

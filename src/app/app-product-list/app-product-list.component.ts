@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from '../models/product';
 import { ProductService } from "../services/product.service";
 
 @Component({
@@ -8,13 +9,18 @@ import { ProductService } from "../services/product.service";
 })
 export class AppProductListComponent implements OnInit {
 
-  products2!: Array<any>; 
+  products: Product[] = []; 
 
   constructor(private service: ProductService) {}
 
   ngOnInit(): void {
-    this.products2 = this.service.list()
-    console.log(this.products2)
+    this.service.list().subscribe((products) => {
+      this.products = products;
+      for (let project of products) {
+          console.log(project);
+        }
+    });
+    console.log(this.products)
   }
 
 }

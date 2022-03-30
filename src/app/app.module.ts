@@ -13,6 +13,7 @@ import { AppProductListComponent } from './app-product-list/app-product-list.com
 import {MatCardModule} from '@angular/material/card';
 import { HomeComponent } from './home/home.component';
 import {MatButtonModule} from '@angular/material/button';
+import { ProductComponent } from './product/product.component';
 
 
 
@@ -21,7 +22,8 @@ import {MatButtonModule} from '@angular/material/button';
     AppComponent,
     AppTopBarComponent,
     AppProductListComponent,
-    HomeComponent
+    HomeComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
