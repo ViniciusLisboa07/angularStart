@@ -1,24 +1,20 @@
-<div class="main">
-    <div class="content">
-        <mat-card class="example-card">
-            <mat-card-header>
-                <h2 class="title">{{product.name}}</h2>
-            </mat-card-header>
-            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-            <mat-card-content>
-                <p>{{product.description}}</p>
-            </mat-card-content>
-        </mat-card>
+<mat-card class="example-card">
+    <mat-card-header>
+        <h2 class="title">{{product.name}}</h2>
+    </mat-card-header>
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+        <p>{{product.description}}</p>
+    </mat-card-content>
+</mat-card>
 
-        <mat-card class="example-card">
-            <mat-card-content>
-                <div class="price">
-                    <h2>R$ {{product.price}}</h2>
-                </div>
-            </mat-card-content>
-            <mat-card-footer>
-                <button mat-raised-button color="primary">Comprar</button>
-            </mat-card-footer>
-        </mat-card>
-    </div>
-</div>
+<mat-card class="example-card">
+    <mat-card-content>
+        <div class="price">
+            <h2>R$ {{product.price}}</h2>
+        </div>
+    </mat-card-content>
+    <mat-card-footer>
+        <button mat-raised-button color="primary">Comprar</button>
+    </mat-card-footer>
+</mat-card>
