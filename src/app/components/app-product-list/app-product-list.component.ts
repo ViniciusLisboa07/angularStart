@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../models/product';
-import { ProductService } from "../services/product.service";
+import { Product } from '../../models/product';
+import { ProductService } from "../../services/product.service";
 
 @Component({
   selector: 'app-app-product-list',
@@ -16,11 +16,7 @@ export class AppProductListComponent implements OnInit {
   ngOnInit(): void {
     this.service.list().subscribe((products) => {
       this.products = products;
-      for (let project of products) {
-          console.log(project);
-        }
     });
-    console.log(this.products)
   }
 
 }

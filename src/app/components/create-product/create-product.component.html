@@ -1,0 +1,27 @@
+<div class="main">
+    <h2>Cadastro de Produto</h2>
+    <mat-form-field appearance="fill">
+        <mat-label>Nome do produto</mat-label>
+        <input matInput [(ngModel)]="name">
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill">
+        <mat-label>Tipo</mat-label>
+        <mat-select [(ngModel)]="type">
+            <mat-option value="one">Materia Prima</mat-option>
+            <mat-option value="two">Materia Prima 2</mat-option>
+        </mat-select>
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill">
+        <mat-label>Descrição</mat-label>
+        <textarea matInput [(ngModel)]="description"></textarea>
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill">
+        <mat-label>Preço</mat-label>
+        <input matInput for="price" [(ngModel)]="price">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="create()">Cadastrar</button>
+</div>

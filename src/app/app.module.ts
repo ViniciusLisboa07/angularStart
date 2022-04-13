@@ -5,15 +5,22 @@ import { CommonModule } from '@angular/common'
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { AppTopBarComponent } from './app-top-bar/app-top-bar.component';
+import { AppTopBarComponent } from './components/app-top-bar/app-top-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
-import { AppProductListComponent } from './app-product-list/app-product-list.component';
+import { AppProductListComponent } from './components/app-product-list/app-product-list.component';
 import {MatCardModule} from '@angular/material/card';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import {MatButtonModule} from '@angular/material/button';
-import { ProductComponent } from './product/product.component';
+import { ProductComponent } from './components/product/product.component';
+import { CreateProductComponent } from './components/create-product/create-product.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import { FormsModule } from '@angular/forms';
+
+
 
 
 
@@ -23,7 +30,8 @@ import { ProductComponent } from './product/product.component';
     AppTopBarComponent,
     AppProductListComponent,
     HomeComponent,
-    ProductComponent
+    ProductComponent,
+    CreateProductComponent
   ],
   imports: [
     BrowserModule,
@@ -32,9 +40,13 @@ import { ProductComponent } from './product/product.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    FormsModule,
     MatIconModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
